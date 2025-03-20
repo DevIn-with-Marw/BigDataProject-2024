@@ -23,7 +23,7 @@ CONNECTION WITH PYTHON\
 pip install pymongo             (OK)
 
 -------------------------------------------- INSTALL KAFKA ------------------------------------------------\
-Download KAFKA from https://www.apache.org/dyn/closer.cgi?path=/kafka/3.7.0/kafka_2.13-3.7.0.tgz (first link)
+Download KAFKA from https://www.apache.org/dyn/closer.cgi?path=/kafka/3.7.0/kafka_2.13-3.7.0.tgz (first link)\
 Follow the instructions provided by https://kafka.apache.org/quickstart
 
 *STEP 1*: extract manually through Windows GUI
@@ -68,13 +68,13 @@ pip install pyspark-mongodb
 
 
 ---------------------------------------- INSTALL UXSIM ------------------------------------\
-It's a python simulator. Simply install the python package:
-CONNECTION WITH PYTHON
+It's a python simulator. Simply install the python package:\
+CONNECTION WITH PYTHON\
 pip install uxsim
 
 
 --------------------------------- INSTALL JUPYTER NOTEBOOKS --------------------------------\
-Works in VScode, not from the python terminal.
+Extension in VScode.
 
 
 
