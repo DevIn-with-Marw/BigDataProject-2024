@@ -13,24 +13,24 @@ INSTALL SPARK                           --
 
 
 pip install uxsim, pymongo, pyspark, kafka-python  (OK)\
-pip install pyspark-mongodb (not working)\
+pip install pyspark-mongodb (not working)
 
 -------------------------------------------- INSTALL MONGODB ----------------------------------------------\
 Download installer from https://www.mongodb.com/try/download/community.\
-Simply run the installer.\
+Simply run the installer.
 
 CONNECTION WITH PYTHON\
-pip install pymongo             (OK)\
+pip install pymongo             (OK)
 
 -------------------------------------------- INSTALL KAFKA ------------------------------------------------\
-Download KAFKA from https://www.apache.org/dyn/closer.cgi?path=/kafka/3.7.0/kafka_2.13-3.7.0.tgz (first link)\
-Follow the instructions provided by https://kafka.apache.org/quickstart\
+Download KAFKA from https://www.apache.org/dyn/closer.cgi?path=/kafka/3.7.0/kafka_2.13-3.7.0.tgz (first link)
+Follow the instructions provided by https://kafka.apache.org/quickstart
 
-*STEP 1*: extract manually through Windows GUI\
+*STEP 1*: extract manually through Windows GUI
 
 *STEP 2*: Make sure you have WSL (I have some Ubuntu distribution). \
         Go to the folder you want (here ProjectFolder/tools/kafka) and hit "bash".\
-        This should get you into the WSL command center.\
+        This should get you into the WSL command center.
 
 *STEP 3*: START THE KAFKA ENVIRONMENT \
         zookeeper-server: To start the zookeeper-server, I encountered a problem \
@@ -38,33 +38,33 @@ Follow the instructions provided by https://kafka.apache.org/quickstart\
         through WSL and things started working (hoping for the best about its \
         interaction with the tools in Windows). Zookeeper server is activated in \
         Terminal 1 - once activated, let it be.\
-        kafka-server (Terminal 2 - once activated, you let it be)\
+        kafka-server (Terminal 2 - once activated, you let it be)
         
 The next steps refer to creating topics, writinh/reading events into/from them and \
 impoting/exporting data from KAFKA, all of which  are being executed in a new terminal.\
 To terminate the KAFKA environment, press Ctrl+C on all terminals, by reverse order \
-(first, the working terminals, then the server and lastly the zookeeper)\
+(first, the working terminals, then the server and lastly the zookeeper)
 
 CONNECT WITH PYTHON \
 pip install kafka-python  \      
 https://kafka-python.readthedocs.io/en/master/
 
 WARNING! Zookeeper data are storedunder the tools/kafka folder, but the Server's logs \
-are stored in Linux/tmp/kafka-logs folder (check config/server.properties file)\
+are stored in Linux/tmp/kafka-logs folder (check config/server.properties file)
 
 ---------------------------------- INSTALL SPARK ----------------------------------------\
 Instructions given by the exercise: https://sandeepkattepogu.medium.com/python-spark-transformations-on-kafka-data-8a19b498b32c\
-*STEP 1*: Download Spark with Hadooop from https://spark.apache.org/downloads.html\
+*STEP 1*: Download Spark with Hadooop from https://spark.apache.org/downloads.html
 
-*STEP 2*: Extract manualy in the desired folder (here ProjectFolder/tools/spark)\
+*STEP 2*: Extract manualy in the desired folder (here ProjectFolder/tools/spark)
 
-*STEP 3*: Follow the instructions (first link) to start Spark (loops through seeking-resetting offest)\
+*STEP 3*: Follow the instructions (first link) to start Spark (loops through seeking-resetting offest)
 
 CONNECT WITH PYTHON             (OK)\
-pip install pyspark \
+pip install pyspark 
 
 CONNECT WITH MONGODB            (NOT WORKING)\
-pip install pyspark-mongodb\
+pip install pyspark-mongodb
 
 
 ---------------------------------------- INSTALL UXSIM ------------------------------------\
